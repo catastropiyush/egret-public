@@ -2,7 +2,7 @@ name: egret-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.12    # or 3.12 if you know MACE supports it
+  - python=3.12
   - ase
   - pytorch
   - pip
