@@ -9,7 +9,7 @@ You can use the pretrained model weights locally or run predictions directly via
 
 For questions or issues, please open a GitHub issue or contact the Rowan team at contact@rowansci.com.
 
-## EGRET Model Suite
+## Egret Model Suite
 
 We provide three general-purpose models, released under the MIT license:
 
@@ -17,7 +17,7 @@ We provide three general-purpose models, released under the MIT license:
 - **Egret-1E** — enhanced with main-group chemistry data; excels at thermochemistry  
 - **Egret-1T** — trained on transition states; ideal for modeling chemical reactivity  
 
-## Example: Using EGRET-1 with ASE
+## Example: Using Egret-1 with ASE
 Egret-1 is compatible with the [ASE](https://wiki.fysik.dtu.dk/ase/) interface. The following is an example using the mace_off calculator from the mace-torch package:
 
 ```python
