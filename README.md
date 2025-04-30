@@ -18,7 +18,7 @@ We provide three general-purpose models, released under the MIT license:
 - **Egret-1t** — trained on transition states; ideal for modeling chemical reactivity  
 
 ## Example: Using Egret-1 with ASE
-Egret-1 is compatible with the [ASE](https://wiki.fysik.dtu.dk/ase/) interface. The following is an example using the mace_off calculator from the mace-torch package:
+Egret-1 is compatible with the [Atomic Simulation Environment](https://wiki.fysik.dtu.dk/ase/) interface. The following is an example using the `mace_off` calculator from the [`mace-torch`](https://github.com/ACEsuit/mace) package:
 
 ```python
 import ase.io
