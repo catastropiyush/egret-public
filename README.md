@@ -28,7 +28,7 @@ from mace.calculators import mace_off
 
 atoms = read("<path_to_molecule_file>")
 
-calculator = mace_off(model="<path_to_model/EGRET_1.model>", default_dtype="float32")
+calculator = mace_off(model="<path_to_model/EGRET_1.model>", default_dtype="float64")
 
 calculator.calculate(atoms, ["<ASE_task_1>", "<ASE_task_2>"], all_changes)
 
