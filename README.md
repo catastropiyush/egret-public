@@ -4,8 +4,9 @@
 <img src="docs/visual_abstract.png" alt="Visual Abstract" width="650"/>
 </p>
 
-This repository contains the **Egret** family of neural network potentials, developed by Rowan using the [MACE](https://github.com/ACEsuit/mace) architecture.  
-You can use the pretrained model weights locally or run predictions directly via the [Rowan web platform](https://labs.rowansci.com/).
+This repository contains the **Egret** family of neural network potentials, developed by Rowan using the [MACE](https://github.com/ACEsuit/mace) architecture. You can use the pretrained model weights locally or run predictions directly via the [Rowan web platform](https://labs.rowansci.com/).
+
+For more information on the models, see [the preprint](https://rowansci.com/publications/egret-1-pretrained-neural-network-potentials).
 
 For questions or issues, please open a GitHub issue or contact the Rowan team at contact@rowansci.com.
 
