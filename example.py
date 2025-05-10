@@ -12,12 +12,12 @@ calculator.calculate(atoms, ["energy", "forces"], all_changes)
 print(calculator.results)
 
 #to obtain node features to use as a molecule descriptor
-full_descriptor = calculator.models[0](calculator._atoms_to_batch(atoms).to_dict())["node_feats"]
-print(f'{full_descriptor.shape=}')
+equivariant_descriptor = calculator.models[0](calculator._atoms_to_batch(atoms).to_dict())["node_feats"]
+print(f'{equivariant_descriptor.shape=}')
 
 #to extract only the inviariant features
 invariant_descriptor = torch.cat([
-    full_descriptor[:, :192],
-    full_descriptor[:, -192:],
+    equivariant_descriptor[:, :192],
+    equivariant_descriptor[:, -192:],
 ], dim=1)
 print(f'{invariant_descriptor.shape=}')
