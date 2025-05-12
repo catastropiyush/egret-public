@@ -58,14 +58,16 @@ print(calculator.results)
 
 ### Extracting Node Features
 
-To get the full equivariant descriptors from the model (of shape $Lx1920$ where $L$ is the number of atoms):
+To get the full equivariant descriptors from the model (of shape `[L,1920]` where `L` is the number of atoms):
 
 ```python
-equivariant_descriptor = calculator.models[0](calculator._atoms_to_batch(atoms).to_dict())["node_feats"]
+equivariant_descriptor = calculator.models[0](
+    calculator._atoms_to_batch(atoms).to_dict(),
+)["node_feats"]
 
 ```
 
-To extract the invariant descriptors (of shape $Lx384$ where $L$ is the number of atoms):
+To extract the invariant descriptors (of shape `[Lx384]` where `L` is the number of atoms):
 
 ```python
 invariant_descriptor = torch.cat([
