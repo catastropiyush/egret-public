@@ -60,10 +60,6 @@ invariant_descriptor = torch.cat([
 
 Invariant features are recommend for scalar property prediction tasks that do not change with rotation like energy or HOMO-LUMO gap. Equivariant features are recommended for tasks that do depend on rotation like dipole moments or forces.
 
-**Descriptor Pooling**
-
-When pooling features over atoms to obtain a single vector as a molecular descriptor, we recommend a sum for `invariant_descriptor.sum(dim=0)` extensive property prediction which scale with system size like energy or heat capacity. Mean pooling `invariant_descriptor.mean(dim=0)` is recommended for intensive properties that do not scale with system size like refractive index or melting point.
-
 
 ## Local Usage
 Install the required packages using 
